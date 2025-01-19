@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2406.04321-brightgreen.svg?style=flat-square)](https://arxiv.org/pdf/2410.16719)   [![githubio](https://img.shields.io/badge/GitHub.io-Project-blue?logo=Github&style=flat-square)](https://evansh666.github.io/EvoGen_Page/)
 
-**This is the official repository for "[Progressive Compositionality in Text-to-Image Generative Modelss](https://arxiv.org/pdf/2410.16719)".**
+**This is the official repository for "[Progressive Compositionality in Text-to-Image Generative Modelss](https://evansh666.github.io/EvoGen_Page/)".**
 
 
 ## ✨ Abstract
