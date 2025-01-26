@@ -72,6 +72,7 @@ In this work, we leverage largelanguage models (LLMs) to compose realistic, comp
 ## 🧱 Dataset 
 
 - File format
+```
     .
     ├── shape
     │   └── metadata.jsonl
@@ -82,7 +83,7 @@ In this work, we leverage largelanguage models (LLMs) to compose realistic, comp
     ├── non-spatial
     ├── scene
     └── complex
-
+```
 To be released...
 
 ## 🚀 Citation
