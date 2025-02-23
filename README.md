@@ -16,6 +16,9 @@ In this work, we leverage largelanguage models (LLMs) to compose realistic, comp
 ![data_pipeline](assets/images/data_pipeline.jpg)
 **Dataset Construction.** To address attribute binding and compositional generation, we propose a new high-quality contrastive dataset, ConPair. Each sample in ConPair consists of a pair of images associated with a positive caption. We construct captions by GPT-4, covering eight categories of compositionality: color, shape, texture, counting, spatial relationship, non-spatial relationship, scene, and complex.
 
+## ✨ Qualitative Results
+![qualitative_results](assets/images/qualitative_results.png)
+
 <!-- ## ✨ Method
 
 <p align="center">
@@ -80,11 +83,12 @@ Here, we show another example of using our pipeline to generate a most faithful 
 
 - Evaluate with T2I-CompBench
   ```bash
-  cd eval
-  
+  cd eval/T2I-Compbench
   # follow steps in https://github.com/Karine-Huang/T2I-CompBench.
-  ```
 
+  cd eval/Attend-and-Excite
+   # follow steps in https://github.com/yuval-alaluf/Attend-and-Excite
+  ```
 
 ## 🧱 Dataset 
 
@@ -101,7 +105,15 @@ Here, we show another example of using our pipeline to generate a most faithful 
     ├── scene
     └── complex
 ```
-To be released...
+- Meta data download
+```bash
+cd dataset
+python data_download.py
+```
+You can access meta prompts from [google drive](https://drive.google.com/drive/folders/1gd7k8NNRFZi4p00iwTw3LAWytXGstmQD?usp=sharing).
+
+- Example contrastive prompts used in the dataset
+![data_example](assets/images/data_example.png)
 
 ## 🚀 Citation
 
@@ -118,7 +130,7 @@ If you find our work useful, please consider citing:
 
 ## 📭 Contact
 
-If you have any comments or questions, feel free to contact Xu Han(evanshan69@gmail.com), Linghao Jin(linghaoj@usc.edu).
+If you have any comments or questions, feel free to contact Xu Han(evanshan69@gmail.com) or Linghao Jin(linghaoj@usc.edu).
 
 ## License
 
