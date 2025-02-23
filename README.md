@@ -56,6 +56,18 @@ In this work, we leverage largelanguage models (LLMs) to compose realistic, comp
   ```
    -->
 
+## 🔮 Data Construction Pipeline
+
+Given a prompt, to generate and select a faithful image:
+  ```bash
+  cd data_construction
+  python pipeline.py --prompt "A cat and a dog" --categories "counting, object" --num_images 10 --theta 0.9 --sd_model "stabilityai/stable-diffusion-2" --llm_model "gpt-4o" --example_image "dog.png"
+  ```
+You can also provide your own images and apply our pipeline. 
+
+Here, we show another example of using our pipeline to generate a most faithful image (red squared).
+![pipeline_example](assets/images/pipeline_example.png)
+
 ## 🔥 Fine-tuning
 
 - Fine tune on Stable-Diffusion v2
@@ -67,6 +79,11 @@ In this work, we leverage largelanguage models (LLMs) to compose realistic, comp
 ## 🏁 Evaluation
 
 - Evaluate with T2I-CompBench
+  ```bash
+  cd eval
+  
+  # follow steps in https://github.com/Karine-Huang/T2I-CompBench.
+  ```
 
 
 ## 🧱 Dataset 
