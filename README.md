@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2406.04321-brightgreen.svg?style=flat-square)](https://arxiv.org/pdf/2410.16719)   [![githubio](https://img.shields.io/badge/GitHub.io-Project-blue?logo=Github&style=flat-square)](https://evansh666.github.io/EvoGen_Page/)
 
-**This is the official repository for "[Progressive Compositionality in Text-to-Image Generative Modelss](https://evansh666.github.io/EvoGen_Page/)".**
+**This is the official repository for "[Progressive Compositionality in Text-to-Image Generative Models](https://evansh666.github.io/EvoGen_Page/)".**
 
 
 ## ✨ Abstract
@@ -49,16 +49,6 @@ In this work, we leverage largelanguage models (LLMs) to compose realistic, comp
   accelerate config
   ```
 
-<!-- ## 🔮 Pretrained Weights
-
-- Please download the pretrained Audio Compression checkpoint [compression_state_dict.bin](https://drive.google.com/file/d/1o1JznkelMiGizV5RhPIamsi5d5VBs4G_/view?usp=sharing) and VidMuse model checkpoint [state_dict.bin](https://drive.google.com/file/d/1RfVrg3d_UFKL2we8JaVqcnhK4P6TIe_9/view?usp=sharing), put them into the directory `'./model'`. (The VidMuse model is trained with our private dataset.)
-  ```bash
-  mkdir model
-  mv compression_state_dict.bin ./model
-  mv state_dict.bin ./model 
-  ```
-   -->
-
 ## 🔮 Data Construction Pipeline
 
 Given a prompt, to generate and select a faithful image:
@@ -92,6 +82,8 @@ Here, we show another example of using our pipeline to generate a most faithful 
 
 ## 🧱 Dataset 
 
+<!-- #### ⚠️ Note: we found there are a few of potentially harmful images in the dataset, we are currently reviewing and filtering the dataset. We will republish it very soon. Please stay tuned. -->
+
 - File format
 ```
     .
@@ -106,14 +98,26 @@ Here, we show another example of using our pipeline to generate a most faithful 
     └── complex
 ```
 - Meta data download
+
+You can access meta prompts from [google drive](warning.txt).
+
 ```bash
 cd dataset
 python data_download.py
 ```
-You can access meta prompts from [google drive](https://drive.google.com/drive/folders/1gd7k8NNRFZi4p00iwTw3LAWytXGstmQD?usp=sharing).
-
+<!-- https://drive.google.com/drive/folders/1gd7k8NNRFZi4p00iwTw3LAWytXGstmQD?usp=sharing -->
 - Example contrastive prompts used in the dataset
 ![data_example](assets/images/data_example.png)
+
+<!-- ## Pretrained Weights
+
+- Please download the [pretrained checkpoint](https://drive.google.com/drive/folders/1_au5Eefx4tCyY0jrisdQ8uPw0jyvbLAB?usp=drive_link).
+
+  ```bash
+  mkdir ckpts
+  mv state_dict.bin ./ckpts 
+  ```
+   -->
 
 ## 🚀 Citation
 
