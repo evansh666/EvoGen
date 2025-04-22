@@ -99,7 +99,7 @@ Here, we show another example of using our pipeline to generate a most faithful 
 ```
 - Meta data download
 
-You can access meta prompts from [google drive](https://drive.google.com/file/d/1gzTcIXZUXdd-DU2Mod5e51GpWNxlWHJY/view?usp=sharing).
+You can access meta prompts from [google drive](https://drive.google.com/drive/folders/1gd7k8NNRFZi4p00iwTw3LAWytXGstmQD?usp=sharing).
 
 ```bash
 cd dataset
